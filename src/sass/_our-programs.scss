@@ -1,0 +1,30 @@
+@import 'resets';
+
+.our-programs {
+	background: #f8e2db;
+	min-height: 600px;
+	width: 100%;
+	margin-bottom: 7em;
+
+	.container {
+		@include width-mixin();
+		padding-top: 5em;
+
+		.heading-title {
+			text-align: center;
+			@include heading-font();
+		}
+
+		.programs {
+			background: teal;
+			display: grid;
+			gap: 1em;
+
+			.project-card {
+				height: 200px;
+				width: 200px;
+				background: orange;
+			}
+		}
+	}
+}

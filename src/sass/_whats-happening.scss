@@ -1,0 +1,31 @@
+@import 'resets';
+
+.whats-happening-section {
+	padding: 4em 0;
+	.container {
+		@include width-mixin();
+
+		.heading-title {
+			@include heading-font();
+			text-align: center;
+			color: $dom-color;
+		}
+
+		.update-cards-wrap {
+			display: grid;
+			gap: 1em;
+
+			.update-card {
+				height: 450px;
+				width: 100%;
+				background: $text-color;
+			}
+
+			@media screen and (min-width: 62em) {
+				display: flex;
+				width: 85%;
+				margin: 0 auto;
+			}
+		}
+	}
+}

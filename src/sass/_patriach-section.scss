@@ -1,0 +1,53 @@
+@import 'resets';
+
+.patriach-section {
+	padding: 5em 0;
+	.container {
+		@include width-mixin();
+		display: grid;
+		gap: 5em;
+
+		.ps-img-card-wrap {
+			height: 500px;
+			width: 100%;
+			background: $text-color;
+		}
+
+		.text-area {
+			.heading-title {
+				margin-bottom: 1em;
+			}
+
+			.paragraph {
+				margin-bottom: 1em;
+				line-height: 1.8;
+				max-width: 400px;
+			}
+
+			.donate-button {
+				@include btn-mixin();
+			}
+		}
+
+		@media screen and (min-width: 62em) {
+			display: flex;
+			width: 70%;
+			gap: 2.5em;
+
+			.ps-img-card-wrap {
+				width: 40%;
+			}
+
+			.text-area {
+				width: 50%;
+				padding-top: 2em;
+
+				.heading-title {
+					font-size: 1.8rem;
+					@include poppins-medium();
+					margin-bottom: 1em;
+				}
+			}
+		}
+	}
+}

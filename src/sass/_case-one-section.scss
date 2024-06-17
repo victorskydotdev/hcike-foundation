@@ -1,0 +1,88 @@
+@import 'resets';
+
+.case-one-section {
+	background: $dom-color;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		background: $dom-color;
+		inset: 0;
+		opacity: 0.7;
+	}
+
+	.second-layout-bgwrap {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.container {
+		@include width-mixin();
+		position: relative;
+		z-index: 2;
+		padding: 5em 0;
+
+		.text-area {
+			margin-bottom: 2em;
+
+			.paragraph {
+				color: $color-light;
+				line-height: 1.8;
+				@include poppins-bold;
+				font-size: 1.3rem;
+			}
+		}
+
+		.box-card-area {
+			display: grid;
+			gap: 2em;
+
+			.box-card1,
+			.box-card2,
+			.box-card3 {
+				background: $color-light;
+				height: 300px;
+				padding: 1.5em;
+
+				div {
+					margin-bottom: 1em;
+				}
+
+				.heading {
+					margin-bottom: 0.7em;
+					color: $dom-color;
+				}
+
+				.subtext {
+					line-height: 1.8;
+				}
+			}
+		}
+
+		@media screen and (min-width: 62em) {
+			.text-area {
+				.paragraph {
+					max-width: 550px;
+					text-align: center;
+					margin: 0 auto;
+				}
+			}
+
+			.box-card-area {
+				display: flex;
+				gap: 1em;
+				width: 80%;
+				margin: 0 auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+@import 'resets';
+
+.featured-blog-section {
+	padding: 8em 0;
+	background: rgba(9, 112, 54, 0.192);
+	margin-bottom: 10em;
+
+	.blog-container {
+		@include width-mixin();
+
+		.heading-title {
+			@include heading-font();
+
+			@media screen and (min-width: 62em) {
+				text-align: right;
+				margin-right: 0.5em;
+			}
+		}
+
+		.blog-content-card-wrap {
+			display: grid;
+			gap: 1em;
+
+			.blog-card {
+				height: 450px;
+				width: 100%;
+				background: $text-color;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.blog-title {
+					color: $color-light;
+				}
+			}
+
+			@media screen and (min-width: 62em) {
+				display: flex;
+				width: 85%;
+				margin-left: 10em;
+			}
+		}
+	}
+}

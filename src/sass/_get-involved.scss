@@ -1,0 +1,7 @@
+@import 'resets';
+
+.get-involved-section {
+	.container {
+		@include width-mixin();
+	}
+}

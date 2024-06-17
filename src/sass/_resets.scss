@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+// font mixins
+@mixin poppins-regular() {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin poppins-medium() {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@mixin poppins-bold() {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	@include poppins-regular();
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+$color-light: #fff;
+$dom-color: #097036;
+$accent-color: #d7522c;
+$text-color: #909090;
+$heading-fz: clamp(3vw, 3rem, 9vw);
+
+@mixin box-shadow() {
+	box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.75);
+}
+
+@mixin btn-mixin() {
+	background: $accent-color;
+	padding: 18px;
+	color: $color-light;
+	display: inline-block;
+	@include poppins-medium();
+	text-decoration: none;
+	text-transform: capitalize;
+	cursor: pointer;
+	border: none;
+}
+
+@mixin heading-font() {
+	color: $dom-color;
+	@include poppins-medium();
+	margin-bottom: 1em;
+	font-size: $heading-fz;
+}
+
+@mixin cardMixin() {
+	height: 300px;
+	width: 100%;
+	// box-shadow: ;
+}
+
+@mixin width-mixin() {
+	width: 90%;
+	margin: 0 auto;
+}

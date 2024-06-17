@@ -1,0 +1,163 @@
+@import 'resets';
+
+.about-intro-section {
+	position: relative;
+	min-height: 600px;
+
+	&::after {
+		content: '';
+		position: absolute;
+		background: #000;
+		inset: 0;
+		z-index: 2;
+		opacity: 0.4;
+		height: 600px;
+	}
+
+	.intro-bg-wrap {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: -0%;
+		z-index: 1;
+
+		img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+			object-position: center;
+		}
+
+		@media screen and (min-width: 62em) {
+			img {
+				height: 600px;
+			}
+		}
+	}
+
+	.container {
+		position: relative;
+		padding-top: 4em;
+		z-index: 3;
+
+		.heading-title {
+			text-align: center;
+			@include heading-font();
+			color: $color-light;
+			padding: 0 1em;
+			margin-bottom: 2em;
+		}
+
+		.cards-wrap {
+			display: grid;
+			gap: 2em;
+			margin-bottom: 5em;
+
+			.card {
+				width: 100%;
+				background: $color-light;
+				padding: 2em;
+				@include box-shadow();
+
+				.heading {
+					margin-bottom: 1em;
+					color: $dom-color;
+				}
+
+				.paragraph {
+					line-height: 1.7;
+				}
+			}
+		}
+
+		@media screen and (min-width: 62em) {
+			height: 600px;
+
+			.heading-title {
+				font-size: 1.9rem;
+				max-width: 500px;
+				margin: 0 auto 2em auto;
+			}
+
+			.cards-wrap {
+				display: flex;
+				padding-left: 6em;
+				position: absolute;
+
+				.card {
+					width: 350px;
+					padding: 2em;
+				}
+			}
+		}
+	}
+
+	.mission-container {
+		@include width-mixin();
+		margin-bottom: 7em;
+		display: grid;
+		grid-template-areas:
+			'mission-img-wrap'
+			'text-area';
+		gap: 3em;
+
+		.text-area {
+			grid-area: text-area;
+
+			.heading-title {
+				margin-bottom: 1em;
+				@include heading-font();
+			}
+
+			.paragraph {
+				line-height: 1.7;
+				margin-bottom: 1.8em;
+			}
+
+			.btn {
+				@include btn-mixin();
+				display: inline-block;
+			}
+		}
+
+		.mission-img-wrap {
+			grid-area: mission-img-wrap;
+			height: 400px;
+			width: 100%;
+			background: $color-light;
+			@include box-shadow();
+			position: relative;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		@media screen and (min-width: 62em) {
+			padding-top: 10em;
+			width: 80%;
+			grid-template-areas: 'text-area mission-img-wrap';
+
+			.text-area {
+				width: 90%;
+
+				.heading-title {
+					margin-bottom: 0.6em;
+				}
+			}
+
+			.mission-img-wrap {
+				width: 500px;
+			}
+		}
+	}
+
+	.core-values-container {
+		.heading-title {
+			text-align: center;
+			@include heading-font();
+		}
+	}
+}

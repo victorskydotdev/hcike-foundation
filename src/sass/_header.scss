@@ -1,0 +1,65 @@
+@import 'resets';
+
+.header-temp-wrap {
+	@include box-shadow();
+	height: 15vh;
+
+	.header-nav-container {
+		@include width-mixin();
+		height: 100%;
+
+		.navbar {
+			display: flex;
+			justify-content: space-between;
+			height: 100%;
+			align-items: center;
+
+			.nav-wrap {
+			}
+
+			@media screen and (min-width: 62em) {
+				.nav-wrap {
+					display: flex;
+					align-items: center;
+					gap: 6em;
+
+					.nav-links {
+						display: flex;
+						gap: 2em;
+
+						.list {
+							a {
+								color: $text-color;
+							}
+						}
+					}
+
+					.btn-wrap {
+						display: flex;
+						gap: 0.6em;
+
+						.link {
+							@include btn-mixin();
+							padding: 1.2em 2em;
+							border: none;
+							text-align: center;
+							cursor: pointer;
+							font-size: 0.9rem;
+						}
+
+						.contact-btn {
+							background: transparent;
+							color: $text-color;
+							border: 1.5px solid $accent-color;
+							font-size: 0.9rem;
+						}
+					}
+				}
+
+				.hamburger {
+					display: none;
+				}
+			}
+		}
+	}
+}
