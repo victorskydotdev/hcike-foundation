@@ -1,0 +1,23 @@
+@import 'resets';
+
+.blog-section {
+	min-height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.container {
+		@include width-mixin();
+		text-align: center;
+
+		.heading-title {
+			color: $dom-color;
+			margin-bottom: 2em;
+			@include heading-font();
+		}
+
+		.home-btn {
+			@include btn-mixin();
+		}
+	}
+}

@@ -14,14 +14,92 @@
 			height: 100%;
 			align-items: center;
 
+			position: relative;
+			z-index: 10;
+
 			.nav-wrap {
+				position: absolute;
+				width: 100%;
+				top: 12vh;
+				padding: 4em 0;
+				display: grid;
+				gap: 4em;
+				place-content: center;
+				text-align: center;
+				overflow-x: hidden !important;
+
+				.nav-links {
+					display: grid;
+					gap: 3em;
+
+					a {
+						color: $color-light;
+					}
+				}
+
+				.btn-wrap {
+					display: grid;
+					gap: 2em;
+
+					.link {
+						@include btn-mixin();
+						padding: 1.2em 2em;
+						border: none;
+						text-align: center;
+						cursor: pointer;
+						font-size: 0.9rem;
+					}
+				}
+			}
+
+			.hamburger {
+				cursor: pointer;
+				position: relative;
+				// background: red;
+				height: 100%;
+				display: flex;
+				padding: 1em;
+
+				svg {
+					width: 3rem;
+					color: $color-light;
+					background: teal;
+				}
+
+				.open-btn {
+					position: absolute;
+					top: 50%;
+					right: 5%;
+					transform: translateY(-50%);
+					transition: all 600ms ease-in;
+					padding: 10px;
+				}
+
+				.close-btn {
+					opacity: 0;
+					transition: all 600ms ease-in;
+					transform: translateY(-150%);
+					position: absolute;
+					top: 31.7%;
+					right: 5%;
+				}
 			}
 
 			@media screen and (min-width: 62em) {
+				.brand-wrap {
+					margin-left: -10px;
+				}
+
 				.nav-wrap {
 					display: flex;
 					align-items: center;
 					gap: 6em;
+					padding: unset;
+					position: unset;
+					width: unset;
+					top: unset;
+					height: unset;
+					background: unset;
 
 					.nav-links {
 						display: flex;
@@ -61,5 +139,38 @@
 				}
 			}
 		}
+	}
+}
+
+.hide-navbar {
+	transform: translateY(-150%);
+	opacity: 0;
+
+	@media screen and (min-width: 62em) {
+		transform: translateY(0) !important;
+		opacity: 1;
+	}
+}
+
+.show-navbar {
+	transform: translateY(0);
+	transition: all 300ms ease-in;
+	opacity: 1;
+	position: relative;
+	height: 80vh;
+
+	.nav-links,
+	.btn-wrap {
+		position: relative;
+		z-index: 2;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: rgba(0, 0, 0, 0.438);
+		backdrop-filter: blur(10px);
+		border-radius: 15px;
 	}
 }
