@@ -18,6 +18,13 @@
 				@include poppins-regular();
 				margin-bottom: 0.5em;
 				font-size: $heading-fz;
+				@include poppins-medium();
+				color: $dom-color;
+
+				.auto-toggle-text {
+					color: $accent-color;
+					@include poppins-bold();
+				}
 			}
 
 			.link-btn {

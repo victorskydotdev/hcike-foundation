@@ -5,9 +5,34 @@
 	height: 500px;
 	display: flex;
 	align-items: center;
+	position: relative;
+	overflow: hidden;
+
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: rgba(0, 0, 0, 0.671);
+	}
+
+	.donate-bg-wrap {
+		width: 100%;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+
+		img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
 
 	.container {
 		@include width-mixin();
+		position: relative;
+		z-index: 3;
 
 		.heading-title {
 			@include heading-font();

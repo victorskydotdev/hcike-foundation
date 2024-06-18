@@ -19,6 +19,14 @@
 				height: 450px;
 				width: 100%;
 				background: $text-color;
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.update {
+					color: $color-light;
+				}
 			}
 
 			@media screen and (min-width: 62em) {

@@ -25,9 +25,9 @@ const navTemplate = `
 								<a href="./blog.html" class="link">Blog/News</a>
 							</li>
 							
-							<li class="list">
+							<!-- <li class="list">
 								<a href="./programs.html" class="link">Programs</a>
-							</li>
+							</li> -->
 						</ul>
 
 						<div class="btn-wrap">
