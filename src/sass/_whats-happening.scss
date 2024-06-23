@@ -6,9 +6,11 @@
 		@include width-mixin();
 
 		.heading-title {
-			@include heading-font();
-			text-align: center;
 			color: $dom-color;
+			font-size: 1.7rem;
+			margin-bottom: 1.8em;
+			text-transform: capitalize;
+			text-align: center;
 		}
 
 		.update-cards-wrap {
@@ -19,6 +21,8 @@
 				height: 450px;
 				width: 100%;
 				background: $text-color;
+				border-radius: 20px;
+				@include box-shadow();
 
 				display: flex;
 				align-items: center;

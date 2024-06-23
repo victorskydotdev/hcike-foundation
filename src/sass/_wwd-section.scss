@@ -12,9 +12,10 @@
 			text-align: center;
 
 			.heading {
-				font-size: $heading-fz;
-				@include poppins-medium();
 				color: $dom-color;
+				font-size: 1.7rem;
+				margin-bottom: 1.8em;
+				text-transform: capitalize;
 			}
 		}
 	}
@@ -32,8 +33,16 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			border-radius: 20px;
 
 			overflow: hidden;
+
+			.heading-title {
+				text-align: center;
+				margin-bottom: 2em;
+				color: $accent-color;
+				text-transform: capitalize;
+			}
 
 			.img-wrap {
 				margin-bottom: -1em;
@@ -42,12 +51,6 @@
 					height: 180px;
 					object-fit: cover;
 				}
-			}
-
-			.heading-title {
-				@include poppins-medium();
-				text-align: center;
-				margin-bottom: 1em;
 			}
 
 			.learn-more-btn {

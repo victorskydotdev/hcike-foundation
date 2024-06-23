@@ -10,11 +10,12 @@
 
 		.text-area {
 			.heading {
-				color: $dom-color;
-				@include poppins-medium();
 				text-align: center;
-				margin-bottom: 1em;
-				font-size: $heading-fz;
+
+				color: $dom-color;
+				font-size: 1.7rem;
+				margin-bottom: 1.2em;
+				text-transform: capitalize;
 			}
 
 			.subtext {
@@ -42,6 +43,7 @@
 				overflow: hidden;
 				position: relative;
 				cursor: pointer;
+				border-radius: 20px;
 
 				&:hover > img {
 					filter: grayscale(0);

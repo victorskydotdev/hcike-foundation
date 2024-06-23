@@ -12,9 +12,14 @@
 			height: 100px;
 			width: 100px;
 			position: absolute;
-			background: $accent-color;
+
 			right: 10%;
 			top: -8.5%;
+
+			img {
+				border-radius: 20px;
+				@include box-shadow();
+			}
 
 			@media screen and (min-width: 62em) {
 				top: -10%;
@@ -26,7 +31,10 @@
 			padding: 3em;
 
 			.heading-title {
-				@include heading-font();
+				color: $dom-color;
+				font-size: 1.7rem;
+				margin-bottom: 1.2em;
+				text-transform: capitalize;
 			}
 
 			.subtext {

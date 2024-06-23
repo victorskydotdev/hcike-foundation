@@ -21,11 +21,25 @@
 	font-style: normal;
 }
 
+@mixin poppins-semibold() {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
 @mixin poppins-bold() {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	font-style: normal;
 }
+
+// gl;obal variables
+$color-light: #fff;
+$dom-color: #097036;
+$accent-color: #d7522c;
+$text-color: #909090;
+$heading-fz: clamp(3vw, 3rem, 9vw);
+$heading-text-color: #595959;
 
 html {
 	scroll-behavior: smooth;
@@ -43,16 +57,16 @@ a {
 	text-decoration: none;
 }
 
-$color-light: #fff;
-$dom-color: #097036;
-$accent-color: #d7522c;
-$text-color: #909090;
-$heading-fz: clamp(3vw, 3rem, 9vw);
+p {
+	font-size: 14.5px;
+	color: $text-color;
+	line-height: 27px !important;
+}
 
 @mixin box-shadow() {
-	box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.75);
-	-webkit-box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.123);
+	// -webkit-box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.11);
+	// -moz-box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.11);
 }
 
 @mixin btn-mixin() {
@@ -65,6 +79,7 @@ $heading-fz: clamp(3vw, 3rem, 9vw);
 	text-transform: capitalize;
 	cursor: pointer;
 	border: none;
+	border-radius: 15px;
 }
 
 @mixin heading-font() {

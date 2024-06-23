@@ -9,7 +9,10 @@
 		@include width-mixin();
 
 		.heading-title {
-			@include heading-font();
+			color: $dom-color;
+			font-size: 1.7rem;
+			margin-bottom: 1.8em;
+			text-transform: capitalize;
 
 			@media screen and (min-width: 62em) {
 				text-align: right;
@@ -28,6 +31,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				border-radius: 20px;
 
 				.blog-title {
 					color: $color-light;

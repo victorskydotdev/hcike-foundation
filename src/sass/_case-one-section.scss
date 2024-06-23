@@ -51,14 +51,18 @@
 				background: $color-light;
 				height: 300px;
 				padding: 1.5em;
+				border-radius: 20px;
+				@include box-shadow();
 
 				div {
 					margin-bottom: 1em;
 				}
 
 				.heading {
-					margin-bottom: 0.7em;
 					color: $dom-color;
+					color: $accent-color;
+					margin-bottom: 0.7em;
+					text-transform: capitalize;
 				}
 
 				.subtext {

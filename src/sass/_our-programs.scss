@@ -4,7 +4,7 @@
 	background: #f8e2db;
 	min-height: 600px;
 	width: 100%;
-	margin-bottom: 7em;
+	margin-bottom: 10em;
 
 	.container {
 		@include width-mixin();
@@ -16,7 +16,6 @@
 		}
 
 		.programs {
-			background: teal;
 			display: grid;
 			gap: 1em;
 

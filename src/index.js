@@ -8,6 +8,8 @@ import { loadAboutImgs } from './app/about-img-assets';
 
 import { loadDonateImgs } from './app/support-img-assets';
 
+import { accordionFunct } from './app/accordion';
+
 // loading the templates
 document.addEventListener('DOMContentLoaded', () => {
 	textAnimationFunct();
@@ -19,4 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	loadImageAssets();
 	loadAboutImgs();
 	loadDonateImgs();
+
+	accordionFunct();
 });

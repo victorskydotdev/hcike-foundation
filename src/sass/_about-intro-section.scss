@@ -58,10 +58,13 @@
 				background: $color-light;
 				padding: 2em;
 				@include box-shadow();
+				border-radius: 20px;
 
 				.heading {
-					margin-bottom: 1em;
-					color: $dom-color;
+					color: $accent-color;
+					font-size: 1.7rem;
+					margin-bottom: 1.3em;
+					text-transform: capitalize;
 				}
 
 				.paragraph {
@@ -105,8 +108,10 @@
 			grid-area: text-area;
 
 			.heading-title {
-				margin-bottom: 1em;
-				@include heading-font();
+				color: $accent-color;
+				font-size: 1.7rem;
+				margin-bottom: 1.3em;
+				text-transform: capitalize;
 			}
 
 			.paragraph {
@@ -150,14 +155,13 @@
 
 			.mission-img-wrap {
 				width: 500px;
-			}
-		}
-	}
 
-	.core-values-container {
-		.heading-title {
-			text-align: center;
-			@include heading-font();
+				img {
+					position: absolute;
+					top: 7%;
+					right: 5%;
+				}
+			}
 		}
 	}
 }

@@ -6,7 +6,9 @@ let greetingIndex = 0;
 
 const textAnimationFunct = () => {
 	setInterval(() => {
-		textToggleElem.textContent = greetingCategories[greetingIndex];
+		if (textToggleElem) {
+			textToggleElem.textContent = greetingCategories[greetingIndex];
+		}
 		greetingIndex = (greetingIndex + 1) % greetingCategories.length; // Wrap around to the beginning
 	}, 1500);
 };
