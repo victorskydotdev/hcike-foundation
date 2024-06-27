@@ -35,7 +35,7 @@
 
 			.paragraph {
 				color: $color-light;
-				line-height: 1.8;
+				line-height: 33px !important;
 				@include poppins-bold;
 				font-size: 1.3rem;
 			}
@@ -81,7 +81,7 @@
 			}
 
 			.box-card-area {
-				display: flex;
+				grid-template-columns: repeat(3, 1fr);
 				gap: 1em;
 				width: 80%;
 				margin: 0 auto;

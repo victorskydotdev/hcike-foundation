@@ -7,6 +7,20 @@
 		<!-- title -->
 		<title>HCIKE Foundation | Home</title>
 
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-SSHS713RB5"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-SSHS713RB5');
+		</script>
+
 		<!-- font awesome -->
 		<script
 			src="https://kit.fontawesome.com/8464da9b67.js"
@@ -25,7 +39,7 @@
 					</h1>
 
 					<!-- donate btn -->
-					<a href="/donate.html" class="link-btn donate-link-btn">Donate</a>
+					<a href="/about.html" class="link-btn donate-link-btn">Learn more</a>
 					<a href="/contact.html" class="link-btn contact-link-btn"
 						>Contact us</a
 					>
@@ -46,9 +60,9 @@
 			<div class="container">
 				<div class="text-area">
 					<p class="paragraph">
-						We are dedicated to holistic, inclusive, and sustainable healthcare
-						solutions for the society, driven by collaboration, innovation,
-						integrity, and passion.
+						We are a people dedicated to holistic, inclusive, and sustainable
+						healthcare solutions for the society, driven by collaboration,
+						innovation, integrity, and passion.
 					</p>
 				</div>
 
@@ -76,7 +90,7 @@
 					<div class="box-card3">
 						<div class="icon3-wrap"></div>
 
-						<h3 class="heading">Sustainability</h3>
+						<h3 class="heading">Sustainable</h3>
 
 						<p class="subtext">
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -102,7 +116,7 @@
 
 					<div class="img-wrap wwd-img-one"></div>
 
-					<button class="learn-more-btn">Learn more</button>
+					<button data-id="button-1" class="learn-more-btn">Learn more</button>
 				</div>
 
 				<div class="card">
@@ -110,7 +124,7 @@
 
 					<div class="img-wrap wwd-img-two"></div>
 
-					<button class="learn-more-btn">Learn more</button>
+					<button data-id="button-2" class="learn-more-btn">Learn more</button>
 				</div>
 
 				<div class="card">
@@ -118,7 +132,7 @@
 
 					<div class="img-wrap wwd-img-three"></div>
 
-					<button class="learn-more-btn">Learn more</button>
+					<button data-id="button-3" class="learn-more-btn">Learn more</button>
 				</div>
 
 				<div class="card">
@@ -126,7 +140,7 @@
 
 					<div class="img-wrap wwd-img-four"></div>
 
-					<button class="learn-more-btn">Learn more</button>
+					<button data-id="button-4" class="learn-more-btn">Learn more</button>
 				</div>
 			</div>
 		</section>
@@ -186,7 +200,7 @@
 		<!-- end of where we work section -->
 
 		<!-- blog section -->
-		<section class="featured-blog-section">
+		<!-- <section class="featured-blog-section">
 			<div class="blog-container">
 				<div class="positioned-brand-wrap"></div>
 
@@ -194,29 +208,31 @@
 
 				<div class="blog-content-card-wrap">
 					<div class="blog-card">
-						<!-- <img src="/" alt="blog-image" /> -->
-
 						<h4 class="blog-title">Featured content loading!!!</h4>
 					</div>
 
 					<div class="blog-card">
-						<!-- <img src="/" alt="blog-image" /> -->
-
 						<h4 class="blog-title">Featured content loading!!!</h4>
 					</div>
 
 					<div class="blog-card">
-						<!-- <img src="/" alt="blog-image" /> -->
-
 						<h4 class="blog-title">Featured content loading!!!</h4>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- end of blog section -->
 
 		<!-- footer section -->
-		<footer class="footer-temp-wrap"></footer>
+		<footer class="footer-temp-wrap">
+			<p class="copyright">
+				&COPY; 2024, HCIKE Foundation. All rights reserved.
+			</p>
+		</footer>
 		<!-- end of footer section -->
+
+		<!-- learn more modal container -->
+		<section class="learn-more-modal"></section>
+		<!-- end of learn more modal container -->
 	</body>
 </html>

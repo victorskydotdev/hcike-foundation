@@ -10,6 +10,10 @@ import { loadDonateImgs } from './app/support-img-assets';
 
 import { accordionFunct } from './app/accordion';
 
+import { loadModal } from './app/learn-more-modal';
+
+import { loadContactImgs } from './app/contact-script';
+
 // loading the templates
 document.addEventListener('DOMContentLoaded', () => {
 	textAnimationFunct();
@@ -23,4 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	loadDonateImgs();
 
 	accordionFunct();
+
+	loadModal();
 });
+
+loadContactImgs();

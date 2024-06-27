@@ -1,0 +1,1 @@
+import contactImg from '../assets/';

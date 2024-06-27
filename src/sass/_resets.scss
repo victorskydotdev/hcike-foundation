@@ -47,10 +47,12 @@ html {
 
 body {
 	@include poppins-regular();
+	position: relative;
 }
 
 li {
 	list-style: none;
+	font-size: 14.5px;
 }
 
 a {

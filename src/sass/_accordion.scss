@@ -5,8 +5,10 @@
 		@include width-mixin();
 
 		.img-container {
-			position: relative;
 			margin-bottom: 7em;
+			position: relative;
+
+			height: 400px;
 
 			.accordion-img {
 				img {

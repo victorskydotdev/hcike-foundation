@@ -5,10 +5,11 @@
 	min-height: 600px;
 	width: 100%;
 	margin-bottom: 10em;
+	padding: 5em 0;
 
 	.container {
 		@include width-mixin();
-		padding-top: 5em;
+		// padding-top: 5em;
 
 		.heading-title {
 			text-align: center;
@@ -20,9 +21,48 @@
 			gap: 1em;
 
 			.project-card {
-				height: 200px;
-				width: 200px;
-				background: orange;
+				min-height: 300px;
+				width: 100%;
+				background: $color-light;
+				@include box-shadow();
+				border-radius: 20px;
+				padding: 2em;
+
+				.title {
+					color: $accent-color;
+					margin-bottom: 1.7em;
+				}
+
+				ul {
+					display: grid;
+					gap: 1em;
+
+					li {
+						display: flex;
+						align-items: flex-start;
+						gap: 1em;
+						color: $text-color;
+
+						i {
+							background: $dom-color;
+							padding: 0.5em 0.56em;
+							border-radius: 100%;
+							color: $color-light;
+						}
+					}
+				}
+			}
+		}
+
+		@media screen and (min-width: 43em) {
+			.programs {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+
+		@media screen and (min-width: 62em) {
+			.programs {
+				grid-template-columns: repeat(3, 1fr);
 			}
 		}
 	}

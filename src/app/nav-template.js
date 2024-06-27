@@ -21,13 +21,13 @@ const navTemplate = `
 								<a href="./about.html" class="link">About</a>
 							</li>
 
-							<li class="list">
-								<a href="./blog.html" class="link">Blog/News</a>
-							</li>
-							
 							<!-- <li class="list">
-								<a href="./programs.html" class="link">Programs</a>
+								<a href="./blog.html" class="link">Blog/News</a>
 							</li> -->
+							
+							<li class="list">
+								<a href="./about.html#our-programs" class="link">Our Programs</a>
+							</li>
 						</ul>
 
 						<div class="btn-wrap">

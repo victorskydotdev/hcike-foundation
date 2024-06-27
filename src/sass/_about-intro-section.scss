@@ -42,10 +42,12 @@
 
 		.heading-title {
 			text-align: center;
-			@include heading-font();
+
 			color: $color-light;
 			padding: 0 1em;
 			margin-bottom: 2em;
+			font-size: 1.7rem;
+			text-transform: capitalize;
 		}
 
 		.cards-wrap {

@@ -3,12 +3,55 @@
 .footer-temp-wrap {
 	background: $dom-color;
 	padding: 6em 0;
-	// height: 500px;
+	position: relative;
+
+	.copyright {
+		position: absolute;
+		bottom: 5%;
+		color: $color-light;
+		left: 5%;
+
+		@media screen and (min-width: 43em) {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
 
 	.footer-container {
 		@include width-mixin();
 		display: grid;
 		gap: 3em;
+
+		.brand-wrap {
+			img {
+				border-radius: 15px;
+				display: inline-block;
+				margin-bottom: 1.5em;
+			}
+
+			.social-media-wrap {
+				display: flex;
+				justify-content: space-between;
+				width: 40%;
+
+				li {
+					border-radius: 20%;
+					@include box-shadow();
+
+					a {
+						color: $color-light;
+						font-size: 1.3rem;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+				}
+
+				@media screen and (min-width: 43em) {
+					width: 50%;
+				}
+			}
+		}
 
 		.footer-sitemaps {
 			display: grid;
@@ -55,6 +98,7 @@
 
 				.heading-title {
 					margin-bottom: 0.7em;
+					font-size: 1.2rem;
 				}
 
 				.newsltr-form {
@@ -62,6 +106,9 @@
 						border: none;
 						background: $color-light;
 						padding: 1.5em 1em;
+						width: 100%;
+						margin-bottom: 0.7em;
+						border-radius: 10px;
 					}
 
 					button {
@@ -71,6 +118,9 @@
 						@include poppins-medium();
 						color: $color-light;
 						outline: $accent-color;
+						width: 150px;
+						border-radius: 10px;
+						cursor: pointer;
 					}
 				}
 			}
@@ -81,6 +131,7 @@
 
 			.brand-wrap {
 				width: 300px;
+				border-radius: 20px;
 			}
 
 			.footer-sitemaps {
