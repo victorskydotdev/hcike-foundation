@@ -71,7 +71,7 @@
 						padding: 1em 1.5em;
 						max-height: 0;
 						overflow: hidden;
-						transition: max-height 0.3s ease-in-out;
+						transition: all 0.5s ease-in-out;
 
 						ul {
 							padding-top: 0.6em;
@@ -87,9 +87,10 @@
 				}
 
 				.accordion-item.active .accordion-content {
-					max-height: 200px;
+					max-height: 100%;
 					background: $accent-color;
 					border-radius: 20px;
+					// transition: all 0.3s ease-in-out;
 				}
 			}
 		}
