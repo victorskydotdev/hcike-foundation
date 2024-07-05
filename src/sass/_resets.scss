@@ -101,3 +101,10 @@ p {
 	width: 90%;
 	margin: 0 auto;
 }
+
+@mixin localHeadingMixin() {
+	font-size: 1.7rem;
+	@include poppins-bold();
+	text-transform: capitalize;
+	color: $heading-text-color;
+}

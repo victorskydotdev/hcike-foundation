@@ -24,7 +24,7 @@
 		.text-area {
 			.heading-title {
 				margin-bottom: 1em;
-				color: $accent-color;
+				color: $heading-text-color;
 				font-size: 1.7rem;
 				margin-bottom: 1.8em;
 				text-transform: capitalize;
@@ -37,7 +37,7 @@
 				color: $text-color;
 			}
 
-			.donate-button {
+			.donate-link {
 				@include btn-mixin();
 			}
 		}

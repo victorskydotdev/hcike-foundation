@@ -11,8 +11,9 @@
 
 		.text-wrap {
 			.heading {
-				@include heading-font();
-				margin-bottom: 0.5em;
+				// @include heading-font();
+				// margin-bottom: 0.5em;
+				@include localHeadingMixin();
 			}
 		}
 

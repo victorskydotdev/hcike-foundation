@@ -1,0 +1,147 @@
+@import 'resets';
+
+.our-impact-section {
+	padding-top: 3em;
+	margin-bottom: 4em;
+
+	.container {
+		@include width-mixin();
+
+		.section1 {
+			display: grid;
+			gap: 2em;
+			margin-bottom: 4em;
+
+			.imgs-wrap {
+				height: 300px;
+				display: flex;
+				gap: 1em;
+
+				div {
+					height: 100%;
+					width: 100%;
+					border-radius: 20px;
+					overflow: hidden;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+
+			.textarea {
+				.heading-title {
+					@include localHeadingMixin();
+					margin-bottom: 1em;
+					text-align: center;
+				}
+
+				.our-imp-card {
+					min-height: 100px;
+					padding: 1.5em;
+					@include box-shadow();
+					border-radius: 30px;
+					margin-bottom: 1em;
+					display: grid;
+					gap: 1em;
+
+					.icon {
+						height: 30px;
+						width: 30px;
+						border-radius: 100%;
+
+						border: dotted 2px $accent-color;
+					}
+
+					.text {
+						width: 100%;
+					}
+				}
+			}
+
+			@media screen and (min-width: 62em) {
+				display: grid;
+				grid-template-columns: 550px 400px;
+				gap: 2.5em;
+
+				width: fit-content;
+				margin: 0 auto 5em auto;
+				margin-bottom: 10em;
+
+				.imgs-wrap {
+					height: 400px;
+				}
+
+				.textarea {
+					.heading-title {
+						text-align: left;
+					}
+
+					.our-imp-card {
+						display: flex;
+
+						.icon {
+							width: 35px;
+							height: 30px;
+						}
+					}
+				}
+			}
+		}
+
+		.section2 {
+			.heading {
+				@include localHeadingMixin();
+				margin-bottom: 0.5em;
+				text-align: center;
+			}
+
+			.subtext {
+				margin-bottom: 3em;
+				text-align: center;
+			}
+
+			.card-wrap {
+				display: grid;
+				gap: 1em;
+
+				.card {
+					@include box-shadow();
+					padding: 1em 2em 1.7em;
+					border-radius: 30px;
+					text-align: center;
+
+					.amount {
+						font-size: 2.5rem;
+						color: $heading-text-color;
+						margin-bottom: 0.6em;
+					}
+
+					.text {
+						margin-bottom: 1em;
+						// text-align: center;
+					}
+
+					.donate-link {
+						@include btn-mixin();
+						font-size: 0.8rem;
+					}
+				}
+
+				@media screen and (min-width: 62em) {
+					display: flex;
+					width: 80%;
+					margin: 1em auto;
+
+					.card {
+						.amount {
+							margin-bottom: 0.2em;
+						}
+					}
+				}
+			}
+		}
+	}
+}

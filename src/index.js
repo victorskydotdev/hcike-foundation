@@ -14,6 +14,8 @@ import { loadModal } from './app/learn-more-modal';
 
 import { loadContactImgs } from './app/contact-script';
 
+import { runAlertFuncts } from './app/alerts';
+
 // loading the templates
 document.addEventListener('DOMContentLoaded', () => {
 	textAnimationFunct();
@@ -32,3 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 loadContactImgs();
+runAlertFuncts();

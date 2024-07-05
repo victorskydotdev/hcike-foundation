@@ -63,10 +63,11 @@
 				border-radius: 20px;
 
 				.heading {
-					color: $accent-color;
-					font-size: 1.7rem;
-					margin-bottom: 1.3em;
-					text-transform: capitalize;
+					// color: $heading-text-color;
+					// font-size: 1.7rem;
+					margin-bottom: 1em;
+					// text-transform: capitalize;
+					@include localHeadingMixin();
 				}
 
 				.paragraph {
@@ -110,10 +111,11 @@
 			grid-area: text-area;
 
 			.heading-title {
-				color: $accent-color;
-				font-size: 1.7rem;
-				margin-bottom: 1.3em;
-				text-transform: capitalize;
+				// color: $accent-color;
+				// font-size: 1.7rem;
+				margin-bottom: 1em;
+				// text-transform: capitalize;
+				@include localHeadingMixin();
 			}
 
 			.paragraph {

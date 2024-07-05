@@ -2,11 +2,13 @@
 
 .whats-happening-section {
 	padding: 4em 0;
+	margin-bottom: 4em;
+
 	.container {
 		@include width-mixin();
 
 		.heading-title {
-			color: $dom-color;
+			color: $heading-text-color;
 			font-size: 1.7rem;
 			margin-bottom: 1.8em;
 			text-transform: capitalize;
