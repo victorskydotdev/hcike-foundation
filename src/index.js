@@ -8,13 +8,19 @@ import { loadAboutImgs } from './app/about-img-assets';
 
 import { loadDonateImgs } from './app/support-img-assets';
 
-import { accordionFunct } from './app/accordion';
+import {
+	accordionFunct,
+	expandLayout,
+	expandContentBox,
+} from './app/accordion';
 
 import { loadModal } from './app/learn-more-modal';
 
 import { loadContactImgs } from './app/contact-script';
 
 import { runAlertFuncts } from './app/alerts';
+
+import { submitForm } from './app/form-handling';
 
 // loading the templates
 document.addEventListener('DOMContentLoaded', () => {
@@ -29,9 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	loadDonateImgs();
 
 	accordionFunct();
+	expandLayout();
+	expandContentBox();
 
 	loadModal();
 });
 
 loadContactImgs();
 runAlertFuncts();
+submitForm();

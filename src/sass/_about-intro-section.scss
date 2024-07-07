@@ -39,6 +39,7 @@
 		position: relative;
 		padding-top: 4em;
 		z-index: 3;
+		transition: all 0.5s ease-in;
 
 		.heading-title {
 			text-align: center;
@@ -61,10 +62,12 @@
 				padding: 2em;
 				@include box-shadow();
 				border-radius: 20px;
+				position: relative;
+				height: 430px;
+				transition: all 0.5s ease-in;
+				overflow: hidden;
 
 				.heading {
-					// color: $heading-text-color;
-					// font-size: 1.7rem;
 					margin-bottom: 1em;
 					// text-transform: capitalize;
 					@include localHeadingMixin();
@@ -72,7 +75,43 @@
 
 				.paragraph {
 					line-height: 1.7;
+					margin-bottom: 1em;
 				}
+
+				button {
+					position: absolute;
+					top: 95%;
+					left: 6%;
+					border-radius: 10px;
+					cursor: pointer;
+					border: none;
+					padding: 0 0.3em;
+					color: $accent-color;
+					@include poppins-medium();
+					width: 86%;
+
+					@media screen and (min-width: 62em) {
+						left: 8%;
+						top: 94%;
+						width: 84%;
+					}
+				}
+
+				.collapse-story-btn {
+					display: none;
+				}
+			}
+
+			.expanded-layout {
+				height: 580px;
+
+				@media screen and (min-width: 62em) {
+					height: 700px;
+				}
+			}
+
+			.card2 {
+				height: fit-content;
 			}
 		}
 
@@ -89,6 +128,7 @@
 				display: flex;
 				padding-left: 6em;
 				position: absolute;
+				gap: 1em;
 
 				.card {
 					width: 350px;

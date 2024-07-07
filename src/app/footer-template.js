@@ -21,7 +21,7 @@ const footerTemplate = `
         </li>
         <li>
           <a href="#">
-            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
           </a>
         </li>
         
@@ -50,7 +50,7 @@ const footerTemplate = `
         <h4 class="heading-title">Subscribe to receive updates from us</h4>
 
         <form action="" class="newsltr-form">
-          <input type="text" placeholder="johndoe@email.com" />
+          <input type="text" name="subscriberemail" placeholder="johndoe@email.com" />
           <button type="submit">Subscribe</button>
         </form>
       </div>
