@@ -37,36 +37,52 @@
 				max-width: 400px;
 				max-height: 345px;
 				overflow: hidden;
-				margin-bottom: 1em;
-				padding-bottom: 2em !important;
-				transition: all 0.5s ease-in;
+				margin-bottom: 1.8em;
+				// padding-bottom: 2em !important;
+				transition: max-height 0.5s ease-in;
+				// background: teal;
+				display: grid;
+				gap: 1em;
 
 				.paragraph {
 					line-height: 1.8;
-					margin-bottom: 1em;
+
 					color: $text-color;
+
+					.read-more-btn {
+						background: transparent;
+						border: none;
+						cursor: pointer;
+					}
 				}
 			}
 
 			.expanded-layout {
-				max-height: 420px;
+				max-height: 650px;
 			}
 
-			.button {
+			.button-element {
 				position: absolute;
-				top: 86%;
-				right: 5%;
+				top: 82%;
+				left: 0;
+				width: 100%;
 				border-radius: 10px;
 				cursor: pointer;
-				background: transparent;
 				border: none;
 				padding: 0 0.3em;
 				color: $accent-color;
 				@include poppins-medium();
+				transition: all 0.5s ease;
 
 				@media screen and (min-width: 62em) {
-					right: 15%;
+					// right: 15%;
+					width: 80%;
 				}
+			}
+
+			.top-position {
+				top: 90%;
+				transition: all 0.5s ease;
 			}
 
 			.expand-btn {

@@ -24,6 +24,11 @@
 		display: grid;
 		gap: 1.5em;
 		overflow-y: auto;
+
+		.heading {
+			margin-bottom: 1em;
+			color: $heading-text-color;
+		}
 	}
 
 	.modal-close-btn {

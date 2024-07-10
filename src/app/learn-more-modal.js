@@ -4,6 +4,8 @@ const learnMoreBtns = document.querySelectorAll('.learn-more-btn');
 
 const templateOne = `
   <div class="container">
+				<h3 class="heading">Humaniterian Services</h3>
+
 				<p class="text">
 					We focus on grass root health services especially in the rural and
 					suburban areas. HC Ike Foundation believes the human health is the
@@ -32,6 +34,8 @@ const templateOne = `
 
 const templateTwo = `
   <div class="container">
+				<h3 class="heading">Health Services</h3>
+
 				<p class="text">
 					Our core health focus is but not limited to women living with cervical cancer in the rural regions of Nigeria. Ensuring adequate medical care are provided and also necessary preventive measures are availed to the girl child on how to live a healthy life. Our team of experts whose indebted knowledge in the field are always willing to offer professional advice on the topic. 
 				</p>
@@ -42,6 +46,8 @@ const templateTwo = `
 
 const templateThree = `
   <div class="container">
+				<h3 class="heading">Carvical Cancer</h3>
+
 				<p class="text">
 					Cervical cancer is fast ravaging our women especially in our rural and suburban. Women with little knowledge of the effect of such disease are left to die in silent. HCIKE Foundation is always available to educate them on the consequences of killing mute. We teach them to speak up and provide medical solutions. 
 
@@ -64,6 +70,8 @@ const templateThree = `
 
 const templateFour = `
   <div class="container">
+				<h3 class="heading">Prostate Cancer</h3>
+
 				<p class="text">
 					Prostate cancer is one of the fastest growing diseases in West Africa and Nigeria to be precise. At HC Ike Foundation, we are equipped with well trained professional who are capable of handling this deadly disease. 
 

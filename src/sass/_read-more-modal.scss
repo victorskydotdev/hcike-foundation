@@ -1,0 +1,67 @@
+@import 'resets';
+
+.read-more-modal {
+	background: rgb(0, 0, 0, 0.4);
+	backdrop-filter: (blur(20px));
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 10;
+	display: none;
+	align-items: center;
+	justify-content: center;
+
+	.lm-close-btn {
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		transform: translateX(-50%);
+		@include btn-mixin();
+		color: red;
+		background: $color-light;
+		@include box-shadow();
+	}
+
+	.container {
+		@include width-mixin();
+		background: $color-light;
+		padding: 1.5em;
+		height: 80vh;
+		overflow-y: scroll;
+		border-radius: 15px;
+		padding-bottom: 5em;
+
+		.heading {
+			margin-bottom: 1em;
+			color: $heading-text-color;
+		}
+
+		.text {
+			margin-bottom: 1em;
+		}
+
+		.donate-link {
+			@include btn-mixin();
+		}
+	}
+
+	@media screen and (min-width: 43em) {
+		.lm-close-btn {
+			top: 15%;
+			bottom: unset;
+			right: 5%;
+			left: unset;
+		}
+
+		.container {
+			padding-left: 4em;
+			padding-top: 5em;
+
+			.text {
+				max-width: 500px;
+			}
+		}
+	}
+}
