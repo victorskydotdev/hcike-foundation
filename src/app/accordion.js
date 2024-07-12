@@ -125,7 +125,7 @@ const readMoreTemplate = `
 		</p>
 
 		<p class="text">
-			Chief HC Ike was a philanthropist, popularly called "Ochiri Ozuo," meaning "He who carries many and trains." His philanthropic efforts were widely felt, providing scholarships to underprivileged individuals, constructing the Oyibo river bridge, installing boreholes for clean water access, and sponsoring youth football competitions. He was a patron and board of trustees member for various organizations and served as one of the directors of the community local bank
+			Chief HC Ike was a philanthropist. His philanthropic efforts were widely felt, providing scholarships to underprivileged individuals, constructing the Oyibo river bridge, installing boreholes for clean water access, and sponsoring youth football competitions. He was a patron and board of trustees member for various organizations and served as one of the directors of the community local bank
 		</p>
 
 		<p class="text">

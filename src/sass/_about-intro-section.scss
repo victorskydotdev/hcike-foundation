@@ -11,7 +11,7 @@
 		inset: 0;
 		z-index: 2;
 		opacity: 0.4;
-		height: 600px;
+		height: 700px;
 	}
 
 	.intro-bg-wrap {
@@ -30,7 +30,7 @@
 
 		@media screen and (min-width: 62em) {
 			img {
-				height: 600px;
+				height: 700px;
 			}
 		}
 	}
@@ -63,7 +63,7 @@
 				@include box-shadow();
 				border-radius: 20px;
 				position: relative;
-				height: 430px;
+				height: 400px;
 				transition: all 0.5s ease-in;
 				overflow: hidden;
 
@@ -112,6 +112,10 @@
 
 			.card2 {
 				height: fit-content;
+
+				@media screen and (min-width: 62em) {
+					height: 400px;
+				}
 			}
 		}
 
@@ -126,9 +130,11 @@
 
 			.cards-wrap {
 				display: flex;
-				padding-left: 6em;
+				// padding-left: 6em;
 				position: absolute;
 				gap: 1em;
+				left: 50%;
+				transform: translateX(-50%);
 
 				.card {
 					width: 350px;

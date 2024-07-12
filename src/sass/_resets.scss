@@ -48,6 +48,7 @@ html {
 body {
 	@include poppins-regular();
 	position: relative;
+	scroll-behavior: smooth;
 }
 
 li {

@@ -9,21 +9,17 @@ const footerTemplate = `
 
       <ul class="social-media-wrap">
         <li>
-          <a href="#">
+          <a href="https://www.facebook.com/profile.php?id=61561756637163">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
         </li>
 
         <li>
-          <a href="#">
+          <a href="https://x.com/hcikefoundation">
             <i class="fa-brands fa-x-twitter"></i>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </li>
+        
         
       </ul>
     </div>
