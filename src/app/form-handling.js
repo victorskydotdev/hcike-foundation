@@ -11,14 +11,14 @@ const submitForm = () => {
 				const formData = new FormData(newsletterForm);
 				console.log(formData);
 
-				const response = await fetch(link, {
-					method: 'POST',
-					headers: {
-						'Content-type': 'application/json',
-					},
+				// const response = await fetch(link, {
+				// 	method: 'POST',
+				// 	headers: {
+				// 		'Content-type': 'application/json',
+				// 	},
 
-					body: formData,
-				});
+				// 	body: formData,
+				// });
 			});
 		} else {
 			console.log('form not in the DOM');
@@ -31,7 +31,9 @@ const submitForm = () => {
 		subtree: true,
 		attributes: true,
 	};
-	observer.observe(parentElement, config);
+	if (parentElement) {
+		observer.observe(parentElement, config);
+	}
 };
 
 export { submitForm };

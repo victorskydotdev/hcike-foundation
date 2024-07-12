@@ -42,6 +42,16 @@ module.exports = {
 			filename: 'programs.html',
 			chunks: 'main',
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/templates/emeka-ike.html',
+			filename: 'emeka-ike.html',
+			chunks: 'main',
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/templates/chioma-ikeh.html',
+			filename: 'chioma-ikeh.html',
+			chunks: 'main',
+		}),
 	],
 
 	module: {

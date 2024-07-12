@@ -156,5 +156,6 @@ if (readmoreBtn) {
 		}
 	});
 }
+// end of readmoremore btn
 
 export { accordionFunct, expandLayout, expandContentBox };

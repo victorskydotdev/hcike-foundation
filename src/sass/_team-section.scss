@@ -19,13 +19,18 @@
 
 		.img-container {
 			display: grid;
-			gap: 1em;
+			gap: 3em;
+
+			@media screen and (min-width: 62em) {
+				gap: 1em;
+			}
 
 			.wrap {
 				min-height: 300px;
-				overflow: hidden;
+				// overflow: hidden;
 				border-radius: 20px;
 				@include box-shadow();
+				position: relative;
 
 				img {
 					display: block;
@@ -33,6 +38,39 @@
 					height: 300px;
 					object-fit: cover;
 					object-position: center;
+					border-radius: 20px;
+				}
+
+				.designation {
+					position: absolute;
+					background: $accent-color;
+					width: 90%;
+					bottom: -10%;
+					left: 5%;
+					@include box-shadow();
+					border-radius: 15px;
+					padding: 1em;
+					text-align: center;
+
+					.heading {
+						color: $color-light;
+					}
+
+					.title {
+						color: $color-light;
+					}
+
+					.read-bio-btn {
+						border: none;
+						padding: 0.5em 2em;
+						cursor: pointer;
+						border-radius: 15px;
+						color: $accent-color;
+						position: relative;
+						z-index: 10;
+						background: $color-light;
+						font-size: 13px;
+					}
 				}
 			}
 		}
@@ -81,6 +119,7 @@
 
 						&:nth-child(1) {
 							border-radius: 5em 5em 0 0;
+							// background: $accent-color;
 						}
 						&:nth-child(2) {
 							border-radius: 7em;
@@ -97,6 +136,7 @@
 						}
 						&:nth-child(6) {
 							border-radius: 5em 5em 0 5em;
+							background: $accent-color;
 						}
 					}
 				}
@@ -105,6 +145,8 @@
 					height: 350px;
 					border-radius: 20px;
 					@include box-shadow();
+					// display: flex;
+					position: relative;
 
 					img {
 						height: 350px;

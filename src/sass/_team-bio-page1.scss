@@ -1,0 +1,28 @@
+@import 'resets';
+
+.team-bio-wrap {
+	// background: teal;
+	padding: 5em 0;
+
+	.container {
+		@include width-mixin();
+
+		.heading {
+			color: $heading-text-color;
+		}
+
+		.bio-heading {
+			margin-bottom: 2em;
+			color: $accent-color;
+		}
+
+		.wrap {
+			max-width: 600px;
+			margin-bottom: 2em;
+
+			.heading {
+				margin-bottom: 1em;
+			}
+		}
+	}
+}
