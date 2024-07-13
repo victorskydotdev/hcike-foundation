@@ -19,6 +19,12 @@ const footerTemplate = `
             <i class="fa-brands fa-x-twitter"></i>
           </a>
         </li>
+       
+        <li>
+          <a href="https://www.linkedin.com/company/hcike-foundation/">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
         
         
       </ul>

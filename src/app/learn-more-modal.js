@@ -7,25 +7,11 @@ const templateOne = `
 				<h3 class="heading">Humaniterian Services</h3>
 
 				<p class="text">
-					We focus on grass root health services especially in the rural and
-					suburban areas. HC Ike Foundation believes the human health is the
-					most vital part of life and should be given utmost attention.
-					Therefore, we ensure the people living in rural and neglected regions
-					of Nigeria and Africa enjoy basic health care services. Our everyday
-					slogan: “your health, our concern” is imbibed in every member of our
-					team.
+					At the HC Ike Foundation, we prioritise grassroots healthcare in rural and suburban areas. We believe health is paramount and strive to ensure basic healthcare access for neglected regions in Nigeria and Africa. Our slogan, “Your health, our concern,” reflects our commitment to this mission.
 				</p>
 
 				<p class="text">
-					We prioritize the health of the locals, irrespective of your identity,
-					beliefs, background, social standard, class or whatever you represent,
-					your healthy life matters to us.
-				</p>
-
-				<p class="text">
-					We have loads of professionals in different medical specialization,
-					who are ready to answer. We provide access to care and promote a
-					healthy lifestyle.
+					We serve everyone, regardless of identity, beliefs, or background, because your health matters to us. Our team of medical professionals is dedicated to providing care and promoting healthy lifestyles.
 				</p>
 			</div>
 
@@ -49,20 +35,12 @@ const templateThree = `
 				<h3 class="heading">Carvical Cancer</h3>
 
 				<p class="text">
-					Cervical cancer is fast ravaging our women especially in our rural and suburban. Women with little knowledge of the effect of such disease are left to die in silent. HCIKE Foundation is always available to educate them on the consequences of killing mute. We teach them to speak up and provide medical solutions. 
-
+					Cervical cancer is a significant threat to women in rural and suburban areas. The HC Ike Foundation educates women about the disease and provides medical solutions, encouraging them to speak up. We focus on the reproductive health of women, adolescents, and young adults in rural regions.
 				</p>
 
 				<p class="text">
-					We also focus on the reproductive health of our women, the girl-adolescent and the young adults living in the rural areas. According to the Federal Ministry of Health National HIV/AIDS and Reproductive Health Survey (NHARS). 2013 Abuja. Federal Ministry of Health: 2012. A significant number of the adolescents aged 15-19 living in South Eastern Nigeria are sexual active with above 40 % and are involved in unprotected sexual activities with multiple partners, exposing them to some reproductive health consequences.  
-
+					Many adolescents aged 15-19 in South-eastern Nigeria engage in unprotected sex, risking their reproductive health. Despite increased contraceptive access, cultural, religious, and financial barriers hinder usage, leading to unsafe abortions. The HC Ike Foundation addresses these issues with tailored medical and mental support, guiding young adults through healthy growth.
 				</p>
-
-        <p class="text">
-          While there have been reports of increased access to contraceptives with tertiary institutions, problems of usage still arise from poor acceptance of these services either for cultural, religious or financial 5 reasons. Strict abortion laws as it were exist in Nigeria but despite these abortion laws, quacks still find ways to perform unsafe abortions using outdated techniques and further creating more reproductive health 6 problems for these adolescents. At HC IKE FOUNDATION, we are properly and specifically designed to medically and mentally meet the needs of these young adults in a timely and respective manner. We are prepared to guide them through the path of growth.
-        </p>
-
-				
 			</div>
 
       <button class="modal-close-btn">Close</button>
@@ -73,8 +51,7 @@ const templateFour = `
 				<h3 class="heading">Prostate Cancer</h3>
 
 				<p class="text">
-					Prostate cancer is one of the fastest growing diseases in West Africa and Nigeria to be precise. At HC Ike Foundation, we are equipped with well trained professional who are capable of handling this deadly disease. 
-
+					Prostate cancer is rapidly increasing in West Africa, particularly in Nigeria. The HC Ike Foundation is equipped with trained professionals to address this serious disease. We provide education on prostate cancer research, PSA level testing, and available treatment options, ensuring men are informed and supported throughout their healthcare journey.
 				</p>
 			</div>
 

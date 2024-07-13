@@ -129,7 +129,7 @@ const readMoreTemplate = `
 		</p>
 
 		<p class="text">
-			Hyacinth and Maria Ike were blessed with seven children, including Dr. Phil Ngozi Oshieze Ehirim, the wife of the former Executive Chairman of Owerri Municipal. Chief HC Ike was also the founding father of the Christian Global Church, serving his local church diligently until his passing. The HCIKE Foundation was established to honor his legacy, continuing his selfless work for humanity and support for the less privileged in society
+			Hyacinth and Maria Ike were blessed with seven children. Chief HC Ike was also the founding father of the Christian Global Church, serving his local church diligently until his passing. The HCIKE Foundation was established to honor his legacy, continuing his selfless work for humanity and support for the less privileged in society
 		</p>
 
 		<button class="donate-link" href="#">Donate now</button>
