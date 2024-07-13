@@ -22,7 +22,7 @@ const footerTemplate = `
        
         <li>
           <a href="https://www.linkedin.com/company/hcike-foundation/">
-            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
           </a>
         </li>
         

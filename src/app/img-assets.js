@@ -76,7 +76,7 @@ const posElemtTemp = `
 // end of who we are section
 
 // where we work image assets
-import mensHealthImg from '../assets/men-healthcare.jpeg';
+import mensHealthImg from '../assets/mens-health.jpg';
 
 const childrenImgWrap = document.querySelector('.children-img-wrap');
 const womenImgWrap = document.querySelector('.women-img-wrap');
