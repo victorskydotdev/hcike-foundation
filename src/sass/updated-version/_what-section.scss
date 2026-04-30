@@ -1,0 +1,120 @@
+@use '../resets';
+
+.what-section {
+	// margin-bottom: 5em;
+	padding: 5em 0 7em;
+
+	.container {
+		width: 80%;
+		margin: 0 auto;
+
+		.masthead-wrap {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 2.9em;
+			text-align: center;
+
+			.wrap {
+				.tag {
+					display: inline-block;
+					font-size: 0.72rem;
+					font-weight: 600;
+					letter-spacing: 0.1em;
+					text-transform: uppercase;
+					color: var(--gold);
+					margin-bottom: 0.9rem;
+				}
+
+				.title {
+					@include sora-fonts(700);
+					font-size: clamp(2rem, 3.5vw, 3rem);
+					font-weight: 900;
+					line-height: 1.15;
+					color: var(--charcoal);
+					max-width: 600px;
+
+					em {
+						font-style: italic;
+						color: $accent-color;
+					}
+				}
+			}
+		}
+
+		.what-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 1.2rem;
+
+			.what-card {
+				border-radius: 1.4rem;
+				padding: 2rem;
+				position: relative;
+				overflow: hidden;
+				transition:
+					transform 0.25s,
+					box-shadow 0.25s;
+				text-decoration: none;
+
+				&:hover {
+					transform: translateY(-4px);
+					box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+				}
+			}
+
+			.c1,
+			.c2,
+			.c3,
+			.c4 {
+				background: $dom-color;
+				color: white;
+
+				.what-card-icon {
+					font-size: 2rem;
+					margin-bottom: 0.6rem;
+					display: block;
+				}
+
+				h3 {
+					font-size: 1.15rem;
+					font-weight: 700;
+					line-height: 1.25;
+					@include sora-fonts(800);
+				}
+
+				p {
+					font-size: 0.82rem;
+					opacity: 0.85;
+					margin-top: 0.5rem;
+					line-height: 1.55;
+					color: $color-light;
+				}
+			}
+		}
+
+		.what-card-arrow {
+			position: absolute;
+			bottom: 1.3rem;
+			right: 1.3rem;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.2);
+			display: grid;
+			place-items: center;
+			font-size: 0.9rem;
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 43em) {
+		// background: teal;
+		// padding: 5em 0 7em;
+
+		.container {
+			.what-grid {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}

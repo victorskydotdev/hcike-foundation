@@ -15,6 +15,10 @@ import { loadContactImgs } from './app/contact-script';
 import { runAlertFuncts } from './app/alerts';
 import { submitForm } from './app/form-handling';
 
+// updated site script
+import { showcaseOutreach } from './app/updated/gallery';
+showcaseOutreach();
+
 // loading the templates
 document.addEventListener('DOMContentLoaded', () => {
 	textAnimationFunct();

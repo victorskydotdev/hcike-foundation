@@ -1,0 +1,189 @@
+@use '../resets';
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+// hero section
+.hero {
+	position: relative;
+	min-height: 100vh;
+	// padding: 4em 0;
+	padding-top: 5em;
+	padding-bottom: 6em;
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		width: 90%;
+		margin: 0 auto;
+		place-items: center;
+		gap: 2em;
+
+		.hero-content {
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			padding-left: 5%;
+
+			.hero-badge {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+				background: rgba(9, 112, 54, 0.548);
+				border-radius: 100px;
+				font-size: 0.78rem;
+				font-weight: 600;
+				letter-spacing: 0.06em;
+				text-transform: uppercase;
+				margin-bottom: 1.5rem;
+				animation: fadeUp 0.6s ease both;
+
+				width: fit-content;
+				padding: 0.35rem 0.9rem;
+				white-space: nowrap;
+
+				span {
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					background: $dom-color;
+				}
+			}
+
+			h1 {
+				// font-family: 'Playfair Display', serif;
+				@include sora-fonts(700);
+				font-size: clamp(2.6rem, 5vw, 4rem);
+				font-weight: 600;
+				line-height: 1.08;
+				color: var(--charcoal);
+				animation: fadeUp 0.7s 0.1s ease both;
+
+				em {
+					font-style: italic;
+					color: $accent-color;
+					font-weight: 900;
+				}
+			}
+
+			.hero-sub {
+				margin-top: 1.5rem;
+				font-size: 1.05rem;
+				color: var(--mid);
+				line-height: 1.75;
+				max-width: 480px;
+				animation: fadeUp 0.7s 0.2s ease both;
+			}
+
+			.hero-actions {
+				margin-top: 2.4rem;
+				display: flex;
+				gap: 1rem;
+				flex-wrap: wrap;
+				animation: fadeUp 0.7s 0.3s ease both;
+			}
+
+			.btn-primary {
+				@include button();
+
+				&:hover {
+					background: #097036b6;
+					transform: translateY(-2px);
+					box-shadow: 0 10px 28px rgba(9, 112, 54, 0.38);
+				}
+			}
+
+			.btn-outline {
+				border: 2px solid $dom-color;
+				color: $dom-color;
+				padding: 0.78rem 1.8rem;
+				border-radius: 100px;
+				font-weight: 600;
+				font-size: 0.95rem;
+				text-decoration: none;
+				transition: all 0.2s;
+
+				&:hover {
+					background: $dom-color;
+					color: white;
+					transform: translateY(-2px);
+				}
+			}
+
+			.hero-stats {
+				display: flex;
+				gap: 2.5rem;
+				margin-top: 3.5rem;
+				animation: fadeUp 0.7s 0.4s ease both;
+
+				.stat-num {
+					font-size: 2rem;
+					font-weight: 700;
+					color: $dom-color;
+					line-height: 1;
+				}
+
+				.stat-label {
+					font-size: 0.78rem;
+					color: var(--mid);
+					margin-top: 0.2rem;
+					font-weight: 500;
+				}
+			}
+		}
+
+		.hero-visual {
+			animation: fadeIn 0.9s 0.2s ease both;
+			width: 110%;
+
+			.hero-img {
+				width: 100%;
+			}
+		}
+	}
+
+	@media screen and (max-width: 62em) {
+		padding-bottom: 7em;
+		.container {
+			grid-template-columns: 1fr;
+
+			.hero-content {
+				// width: 70%;
+				padding-right: 20%;
+			}
+
+			.hero-visual {
+				display: none;
+			}
+		}
+	}
+
+	@media screen and (max-width: 43em) {
+		padding-top: 5em;
+		padding-bottom: 2em;
+
+		.container {
+			width: 85%;
+			.hero-content {
+				padding: 0 0;
+
+				.hero-badge {
+					text-align: center;
+
+					padding: 0.5em 2em;
+					position: relative;
+					width: fit-content;
+
+					span {
+						position: absolute;
+						left: 5%;
+					}
+				}
+			}
+
+			.hero-visual {
+				display: block;
+				// background: red;
+			}
+		}
+	}
+}

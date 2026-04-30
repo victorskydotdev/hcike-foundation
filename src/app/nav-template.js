@@ -64,6 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const loadNavTemplate = () => {
+	if (!headerNavWrap) return;
+
 	headerNavWrap.innerHTML += navTemplate;
 
 	const openBtn = document.querySelector('.open-btn');

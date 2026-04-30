@@ -61,6 +61,8 @@ const footerTemplate = `
 `;
 
 const loadFooterTemp = () => {
+	if (!footerWrap) return;
+
 	footerWrap.innerHTML += footerTemplate;
 };
 

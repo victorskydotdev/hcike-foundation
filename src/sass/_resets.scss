@@ -8,6 +8,13 @@
 	box-sizing: border-box;
 }
 
+@mixin sora-fonts($font-weight) {
+	font-family: 'Sora', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: $font-weight;
+	font-style: normal;
+}
+
 // font mixins
 @mixin poppins-regular() {
 	font-family: 'Poppins', sans-serif;

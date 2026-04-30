@@ -1,0 +1,142 @@
+// pillars
+.pillars {
+	background: var(--white);
+
+	.pillars-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 5rem;
+		align-items: start;
+		margin-top: 4rem;
+		width: 90%;
+		margin: 0 auto;
+		padding: 7em 0;
+
+		.pillars-visual {
+			height: 100%;
+			width: 100%;
+
+			.img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.pillar-cards {
+			display: flex;
+			flex-direction: column;
+			gap: 1.2rem;
+
+			.masthead-wrap {
+				display: flex;
+				justify-content: center;
+
+				.wrap {
+					.tag {
+						display: inline-block;
+						font-size: 0.72rem;
+						font-weight: 600;
+						letter-spacing: 0.1em;
+						text-transform: uppercase;
+						color: var(--gold);
+						margin-bottom: 0.9rem;
+					}
+
+					.title {
+						@include sora-fonts(700);
+						font-size: clamp(2rem, 3.5vw, 3rem);
+						font-weight: 900;
+						line-height: 1.15;
+						color: var(--charcoal);
+						max-width: 600px;
+
+						em {
+							font-style: italic;
+							color: $accent-color;
+						}
+					}
+				}
+			}
+
+			.card-wrap {
+				display: flex;
+				flex-direction: column;
+				gap: 1em;
+
+				.pillar-card {
+					background: var(--cream);
+					border-radius: 1.2rem;
+					padding: 1.6rem;
+					border: 1px solid var(--border);
+					display: flex;
+					gap: 1.2rem;
+					align-items: flex-start;
+					transition:
+						box-shadow 0.25s,
+						transform 0.25s;
+
+					&:hover {
+						box-shadow: 0 8px 32px rgba(26, 122, 110, 0.12);
+						transform: translateX(6px);
+					}
+
+					.pillar-icon {
+						width: 46px;
+						height: 46px;
+						border-radius: 0.8rem;
+						background: var(--teal-pale);
+						display: grid;
+						place-items: center;
+						font-size: 1.3rem;
+						flex-shrink: 0;
+					}
+					h3 {
+						font-size: 0.95rem;
+						font-weight: 600;
+						color: var(--charcoal);
+					}
+					p {
+						font-size: 0.86rem;
+						color: var(--mid);
+						margin-top: 0.3rem;
+						line-height: 1.6;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 62em) {
+		// background: teal;
+		// padding: 3em 1em;
+
+		.pillars-grid {
+			grid-template-columns: 1fr;
+			// grid-template-rows: 400px 400px;
+			// grid-template-areas: 'pillar-cards', 'pillars-visual';
+			// margin-top: unset;
+			// gap: unset;
+			gap: 1em;
+
+			.pillar-cards {
+				// grid-area: pillar-cards;
+
+				.masthead-wrap {
+					.wrap {
+						text-align: center;
+					}
+				}
+			}
+
+			.pillars-visual {
+				// grid-area: pillars-visual;
+				display: none;
+
+				.img {
+					border-radius: 20px;
+				}
+			}
+		}
+	}
+}

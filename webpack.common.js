@@ -52,6 +52,12 @@ module.exports = {
 			filename: 'chioma-ikeh.html',
 			chunks: 'main',
 		}),
+
+		new HtmlWebpackPlugin({
+			template: './src/templates/updated-version.html',
+			filename: './updated-version/index.html',
+			chunks: 'main',
+		}),
 	],
 
 	module: {
@@ -76,16 +82,21 @@ module.exports = {
 					},
 				},
 			},
+			// {
+			// 	test: /\.(svg|png|jpe?g|gif)$/,
+			// 	use: {
+			// 		loader: 'file-loader',
+			// 		options: {
+			// 			name: '[name].[hash].[ext]',
+			// 			outputPath: 'images',
+			// 			publicPath: 'images',
+			// 		},
+			// 	},
+			// },
+
 			{
 				test: /\.(svg|png|jpe?g|gif)$/,
-				use: {
-					loader: 'file-loader',
-					options: {
-						name: '[name].[hash].[ext]',
-						outputPath: 'images',
-						publicPath: 'images',
-					},
-				},
+				type: 'asset/resource',
 			},
 		],
 	},
